@@ -1,0 +1,94 @@
+// NAVIGATION
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 12rem;
+    max-width: 1440px;
+    margin: auto;
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        list-style: none;
+        padding-left: 4.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: $--color-violet-grayish;
+
+        &:hover,
+        &:active {
+            color: $--color-primary-dark-2;
+            transition: all 0.2s;
+        }
+        &__main {
+            padding: 0.8rem 1.8rem;
+            background-color: transparent;
+            border: 2px solid $--color-violet-grayish;
+            border-radius: 0.1rem;
+
+            &:hover,
+            &:active {
+                background-color: $--color-primary-dark-2;
+                color: $--color-grey-light;
+                transition: all 0.3s;
+                border: 2px solid $--color-primary-dark-2;
+            }
+        }
+    }
+}
+
+// MAIN SECTION
+
+.header {
+    padding: 10rem 12rem;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+    &__text {
+        max-width: 50%;
+        padding-right: 3rem;
+        color: $--color-white;
+        &_heading:before {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 17rem;
+            top: 19rem;
+            background: $--color-white;
+        }
+        &_heading {
+            font-size: 7rem;
+            font-family: $--font-heading;
+            line-height: 7rem;
+            padding-top: 8rem;
+            padding-bottom: 3rem;
+        }
+        &_small {
+            font-size: 1.6rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    &__img {
+        display: unset;
+        height: max-content;
+        min-width: 30rem;
+        max-width:70rem;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        padding-right: 12rem;
+
+        &__hide {
+            display: none;
+        }
+    }
+}

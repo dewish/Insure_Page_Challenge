@@ -1,0 +1,173 @@
+@media (max-width: 1360px) {
+    .nav {
+        padding: 3rem 6rem;
+    }
+
+    .header {
+        padding: 10rem 6rem;
+        &__img {
+            padding-right: 6rem;
+        }
+    }
+
+    .benefits {
+        padding: 22rem 6rem 15rem;
+
+        &__header:before {
+            top: 92rem;
+        }
+    }
+
+    .callToAction {
+        width: 85%;
+        margin-bottom: 15rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .callToAction {
+        width: 95%;
+        margin-bottom: 15rem;
+    }
+
+    .footer__list {
+        padding: 0rem 30rem 10rem 6rem;
+    }
+}
+
+@media (max-width: 1190px) {
+    .header {
+        &__text {
+            &_heading {
+                font-size: 5.6rem;
+            }
+            &_small {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .header {
+        padding: 2rem 15rem;
+        &__text {
+            max-width: 100%;
+            text-align: center;
+            &_heading {
+                font-size: 7rem;
+            }
+            &_heading:before {
+                display: none;
+            }
+            &_small {
+                font-size: 1.6rem;
+            }
+        }
+        &__img {
+            display: none;
+            max-width: unset;
+            &__hide {
+                display: block;
+                position: relative;
+                object-fit: cover;
+                width: 100%;
+                height: 58rem;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .benefits {
+        &__header {
+            text-align: center;
+        }
+    }
+
+    .bg {
+        height: 50rem;
+
+        &::before {
+            top: 66.5rem;
+            width: 100%;
+            right: -20rem;
+            pointer-events: none;
+        }
+    }
+    .benefits {
+        padding: 8rem 6rem 10rem;
+        &__header:before {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .nav {
+        padding: 3rem 6rem;
+        padding-right: 2rem;
+        &__item {
+            padding-left: 2.5rem;
+        }
+    }
+
+    .callToAction {
+        padding: 3.5rem 6rem;
+        flex-direction: column;
+    }
+
+    .callToAction {
+        &__headingAction {
+            font-size: 5.5rem;
+            line-height: 5rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    .footer__list {
+        padding: 0rem 15rem 10rem 6rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .header {
+        padding: 2rem 5rem;
+    }
+
+    .footer__list {
+        padding: 0rem 8rem 10rem 6rem;
+    }
+
+    .card {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+        &_paragraph {
+            text-align: center;
+        }
+    }
+
+    .benefits {
+        &_section {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__header {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        padding: 1rem 4rem;
+        &__text {
+            &_heading {
+                font-size: 5.5rem;
+                padding-top: 6rem;
+            }
+        }
+    }
+}
